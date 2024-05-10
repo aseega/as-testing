@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML5 Boilerplate</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    /* CSS styles for the login page */
+  </style>
 </head>
-
 <body>
-  <h1>Page Title</h1>
-  <script src="scripts.js"></script>
-</body>
+  <h2>Login</h2>
+  <form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    <button type="submit">Login</button>
+  </form>
 
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Perform secure authentication (e.g., send hashed credentials to server)
+      // If authentication is successful, generate session token and redirect
+      // Store the session token securely (e.g., in a secure cookie)
+      // Redirect to authorized page
+      if (username === 'admin' && password === 'password') {
+        const sessionToken = generateSessionToken(username);
+        sessionStorage.setItem('sessionToken', sessionToken);
+        window.location.href = 'test.html'; // Redirect to authorized page
+      } else {
+        alert('Invalid username or password');
+      }
+    });
+
+    function generateSessionToken(username) {
+      // Generate a random session token or JWT
+      // Example: return token generated using JWT library
+      // Replace this with your actual token generation logic
+      return 'random_session_token_for_' + username;
+    }
+  </script>
+</body>
 </html>
