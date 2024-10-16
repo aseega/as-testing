@@ -9,10 +9,9 @@ body {
 }
 
 .clock-container {
-    background-color: #d1d1d1;
-    border-radius: 50%;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .clock {
@@ -21,13 +20,13 @@ body {
     border: 8px solid #a68b56;
     border-radius: 50%;
     position: relative;
+    background-color: #d1d1d1;
 }
 
 .clock-face {
     width: 100%;
     height: 100%;
     position: relative;
-    transform: translateY(-3px); /* Adjust for the hand positions */
 }
 
 .hand {
@@ -39,7 +38,6 @@ body {
     transform-origin: 100%;
     transform: rotate(90deg);
     transition: all 0.05s;
-    transition-timing-function: ease-in-out;
 }
 
 .hour-hand {
@@ -56,4 +54,17 @@ body {
     height: 2px;
     width: 48%;
     background: #ff5f5f;
+}
+
+.number {
+    position: absolute;
+    font-size: 20px;
+    color: #a68b56;
+}
+
+.digital-clock {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #a68b56;
+    font-family: 'Times New Roman', serif;
 }
