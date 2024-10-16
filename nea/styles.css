@@ -60,6 +60,7 @@ body {
     position: absolute;
     font-size: 20px;
     color: #a68b56;
+    font-weight: bold;
 }
 
 .digital-clock {
