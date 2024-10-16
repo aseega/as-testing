@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analog Clock</title>
+    <title>Analog Clock with Digital Time</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,8 +13,21 @@
                 <div class="hand hour-hand"></div>
                 <div class="hand minute-hand"></div>
                 <div class="hand second-hand"></div>
+                <div class="number" style="top: 10px; left: 50%; transform: translateX(-50%);">12</div>
+                <div class="number" style="top: 50%; left: 10px; transform: translateY(-50%);">9</div>
+                <div class="number" style="top: 50%; right: 10px; transform: translateY(-50%);">3</div>
+                <div class="number" style="bottom: 10px; left: 50%; transform: translateX(-50%);">6</div>
+                <div class="number" style="top: 25%; left: 75%; transform: translate(-50%, -50%);">1</div>
+                <div class="number" style="top: 25%; left: 25%; transform: translate(-50%, -50%);">11</div>
+                <div class="number" style="top: 75%; left: 75%; transform: translate(-50%, -50%);">5</div>
+                <div class="number" style="top: 75%; left: 25%; transform: translate(-50%, -50%);">7</div>
+                <div class="number" style="top: 38%; left: 88%; transform: translate(-50%, -50%);">2</div>
+                <div class="number" style="top: 38%; left: 12%; transform: translate(-50%, -50%);">10</div>
+                <div class="number" style="top: 62%; left: 88%; transform: translate(-50%, -50%);">4</div>
+                <div class="number" style="top: 62%; left: 12%; transform: translate(-50%, -50%);">8</div>
             </div>
         </div>
+        <div class="digital-clock" id="digitalClock">00:00</div>
     </div>
 
     <script src="script.js"></script>
