@@ -4,7 +4,6 @@
 /* General font styles */
 body {
     font-family: 'Raleway', sans-serif;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 100, 1) 35%, rgba(0, 212, 255, 1) 100%);
     margin: 0;
     padding: 0;
     color: #333; /* Update as needed */
@@ -36,7 +35,7 @@ header {
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-}
+} 
 
 .button {
     font-family: 'Open Sans', sans-serif;
