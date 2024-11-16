@@ -1,11 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+/* Apply font-face for Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* General font styles */
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #0c0c0c;
-  background-color: #ffffff;
-  overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 100, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    margin: 0;
+    padding: 0;
+    color: #333; /* Update as needed */
 }
 
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    background: #009688;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background: #00796b;
+}
 .layout_padding {
   padding: 90px 0;
 }
